@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+  /*color mode */
+  --primary-color: #b0c4de;
+  --secondary-color: #dda0dd;
+  --dark-color: #020202;
+  --light-color: #f8f8ff;
+  --more-dark-color: #1c1c1c;
+
+  /* fonts */
+  --title-font-size: 1, 1rem;
+  --subtitle-font-size: 0.9rem;
+  --font-size: 0.7rem;
+  --button-font-size: 0.6rem;
+  --text-color: #1c1c1c;
+  --body-font: #1c1c1c;
+}
+
+/* Aqui começa o CSS do footer*/
+footer {
+  width: 100%;
+  padding: 30px;
+  background-color: var(--dark-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.redes__sociais {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.redes__sociais-d {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.redes__sociais a {
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.redes__sociais img {
+  width: 60%;
+}
+
+.redes__sociais-d img {
+  width: 60%;
+}
+
+.redes__sociais a:hover {
+  transform: translateY(-8px);
+}
+
+.text__integrantes {
+  display: flex;
+  flex-direction: row;
+  color: var(--light-color);
+  font-size: var(--font-size);
+}
+
+.rodape__text {
+  color: var(--light-color);
+  font-size: var(--font-size);
+}
+
+.icon__seta a img:hover {
+  transform: translateY(-8px);
+}
+
+.icon__seta {
+  position: absolute;
+  right: 0;
+  bottom: 6px;
+}
+
+.icon__seta img {
+  width: 60%;
+  transition: 0.3s;
+}
