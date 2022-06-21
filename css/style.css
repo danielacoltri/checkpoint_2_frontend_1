@@ -7,19 +7,125 @@
   font-family: "Poppins", sans-serif;
 
   /*color mode */
-  --primary-color: #b0c4de;
-  --secondary-color: #dda0dd;
+  --primary-color: #3b183f;
+  --secondary-color: #b24ec4;
   --dark-color: #020202;
-  --light-color: #f8f8ff;
+  --light-color: #6c757d;
   --more-dark-color: #1c1c1c;
 
   /* fonts */
-  --title-font-size: 1, 1rem;
+  --title-font-size: 1rem;
   --subtitle-font-size: 0.9rem;
+  --title-footer: 0.9rem;
+  --text-footer: 0.725rem;
   --font-size: 0.7rem;
   --button-font-size: 0.6rem;
-  --text-color: #1c1c1c;
-  --body-font: #1c1c1c;
+  --text-color: #f1f1f1;
+  --body-font-color: #6c757d;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+h3 {
+  font-size: var(--title-footer);
+}
+
+p {
+  color: var(--body-font-color);
+}
+
+/*Aqui começa o header*/
+header {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--light-color);
+  color: var(--text-color);
+  position: fixed;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__itens {
+  display: flex;
+  justify-content: center;
+}
+
+.menu__itens ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.menu__itens li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.2s;
+  position: relative;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: var(--dark-color);
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: var(--dark-color);
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  transition: width 0.2s;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+  width: 100%;
+}
+
+/* Aqui começa o CSS do banner*/
+.banner {
+  background-image: url("../img/Banner_Bjork.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+.banner h1 {
+  width: 20%;
+  background-color: var(--dark-color);
+  font-weight: 700;
+  font-size: var(--title-font-size);
+  text-align: left;
+  padding: 10px;
+  color: var(--text-color);
+}
+
+.banner p {
+  width: 50%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--font-size);
+  font-weight: 500;
+  text-align: justify;
+  color: var(--light-color);
+  background-color: var(--dark-color);
+  padding: 10px;
 }
 
 /* Aqui começa o CSS do footer*/
@@ -32,50 +138,37 @@ footer {
   justify-content: center;
   align-items: center;
   position: relative;
-}
-.redes__sociais {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  color: var(--light-color);
+  font-size: var(--text-footer);
 }
 
-.redes__sociais-d {
+.team {
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 24px;
 }
 
-.redes__sociais a {
+.team .team__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team .team__rigth {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.team a img {
   text-align: center;
   text-decoration: none;
   transition: 0.3s;
 }
 
-.redes__sociais img {
-  width: 60%;
-}
-
-.redes__sociais-d img {
-  width: 60%;
-}
-
-.redes__sociais a:hover {
+.team a:hover img {
   transform: translateY(-8px);
-}
-
-.text__integrantes {
-  display: flex;
-  flex-direction: row;
-  color: var(--light-color);
-  font-size: var(--font-size);
-}
-
-.rodape__text {
-  color: var(--light-color);
-  font-size: var(--font-size);
 }
 
 .icon__seta a img:hover {
