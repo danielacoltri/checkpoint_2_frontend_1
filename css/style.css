@@ -33,13 +33,47 @@ h3 {
   font-size: var(--title-footer);
 }
 
+h5 {
+  color: var(--text-color);
+}
 p {
   color: var(--body-font-color);
 }
 
+.button {
+  margin-bottom: 25px;
+  padding: 5px 20px 6px;
+  background-color: #af1260;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
 /*Aqui começa o header*/
-header {
+
+/* .container-fluid .collapse .navbar-collapse {
+  display: flex;
+  flex-grow: 3;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+} */
+
+.navbar > .container,
+.navbar > .container-fluid,
+.navbar > .container-lg,
+.navbar > .container-md,
+.navbar > .container-sm,
+.navbar > .container-xl,
+.navbar > .container-xx {
+  display: flex;
+  justify-content: right;
+  background-color: #af1260;
+}
+
+/* header {
   width: 100%;
+  min-height: 79px;
+
   padding: 10px 40px;
   background-color: var(--light-color);
   color: var(--primary-color);
@@ -75,14 +109,14 @@ header {
 
 nav ul li a:hover,
 nav ul li a.active {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 nav ul li a::after {
   content: "";
   width: 0%;
   height: 2px;
-  background: var(--secondary-color);
+  background: var(--more-dark-color);
   position: absolute;
   left: 0;
   bottom: -1rem;
@@ -92,9 +126,27 @@ nav ul li a::after {
 nav ul li a:hover::after,
 nav ul li a.active::after {
   width: 100%;
-}
+} */
 
 /* Aqui começa o CSS do banner*/
+
+/* .carousel-item .carousel-caption {
+  margin-bottom: 30px;
+}
+
+.carousel-inner .carousel-item {
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.carousel-inner .carousel-item p {
+  color: var(--text-color);
+} */
+
 .banner {
   height: 100vh;
   background-image: url("../img/Banner_Bjork.jpg");
