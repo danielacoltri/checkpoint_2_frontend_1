@@ -29,6 +29,10 @@ html {
   scroll-behavior: smooth;
 }
 
+:target {
+  scroll-margin-top: 80px;
+}
+
 h3 {
   font-size: var(--title-footer);
 }
@@ -36,34 +40,47 @@ h3 {
 h5 {
   color: var(--text-color);
 }
+
 p {
   color: var(--body-font-color);
+}
+
+.title__section h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 0;
+  font-weight: 900;
+  position: relative;
+}
+
+.title__section h1::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 250px;
+  background-color: var(--more-dark-color);
+  bottom: 0;
 }
 
 .button {
   margin-bottom: 25px;
   padding: 5px 20px 6px;
-  background-color: #af1260;
+  background-color: var(--secondary-color);
   text-decoration: none;
   border-radius: 5px;
+  color: var(--light-color);
+}
+
+.button:hover {
+  color: var(--primary-color);
+}
+
+a {
+  font-weight: 500;
 }
 
 /*Aqui começa o header*/
-
-/* .container-fluid .collapse .navbar-collapse {
-  display: flex;
-  flex-grow: 3;
-  flex-wrap: inherit;
-  align-items: center;
-  justify-content: space-between;
-} */
-
-/* .navbar .navbar-toggler .navbar-toggler-icon .navbar-nav .nav-item li {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  background-color: #af1260;
-} */
 
 header {
   width: 100%;
@@ -125,41 +142,27 @@ nav ul li a.active::after {
 
 /* Aqui começa o CSS do banner*/
 
-/* .carousel-item .carousel-caption {
-  margin-bottom: 30px;
-}
-
-.carousel-inner .carousel-item {
-  height: 100vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-}
-
-.carousel-inner .carousel-item p {
-  color: var(--text-color);
-} */
-
 .banner {
   height: 100vh;
   background-image: url("../img/Banner_Bjork.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-attachment: fixed;
   background-position: center;
 
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   justify-content: center;
   position: relative;
 }
 
 .banner_description {
   position: absolute;
-  bottom: 20px;
+  bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .banner h1 {
@@ -167,9 +170,10 @@ nav ul li a.active::after {
   background-color: var(--dark-color);
   font-weight: 700;
   font-size: var(--title-font-size);
-  text-align: left;
+  text-align: center;
   padding: 10px;
   color: var(--text-color);
+  align-items: center;
 }
 
 .banner p {
@@ -178,7 +182,7 @@ nav ul li a.active::after {
   font-weight: 400;
   font-size: var(--font-size);
   font-weight: 500;
-  text-align: justify;
+  text-align: center;
   color: var(--light-color);
   background-color: var(--dark-color);
   padding: 10px;
@@ -199,17 +203,9 @@ nav ul li a.active::after {
   transform: scale(1.01);
 }
 
-.cards .card-body a {
-  background-color: var(--more-dark-color);
-}
-
-.cards .card-body a:hover::after,
-.cards .card-body a.active::after {
-  background-color: red;
-}
-
 .card-title {
   color: var(--more-dark-color);
+  font-weight: 600;
 }
 
 .card-text {
@@ -272,4 +268,57 @@ footer {
 .icon__seta img {
   width: 60%;
   transition: 0.3s;
+}
+
+@media screen and (max-width: 425px) {
+  .button {
+    margin-bottom: 5px;
+    padding: 10px 20px 11px;
+    width: 50%;
+    text-align: center;
+  }
+
+  .banner_description {
+    position: absolute;
+    bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner h1 {
+    width: 90%;
+    padding: 10px;
+    font-size: 2rem;
+  }
+
+  .banner p {
+    line-height: 1.6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  footer {
+    align-items: flex-start;
+  }
+
+  .team {
+    flex-direction: column;
+  }
+
+  .team .team__rigth {
+    align-items: flex-start;
+  }
+
+  .team h3 {
+    margin-top: 10px;
+  }
+
+  .icon__seta {
+    bottom: 30px;
+    right: 15px;
+  }
+  .icon__seta img {
+    width: 80%;
+  }
 }

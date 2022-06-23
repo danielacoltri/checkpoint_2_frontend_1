@@ -1,0 +1,32 @@
+.banner__banda img {
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  object-position: top;
+  margin-top: 80px;
+}
+
+.container__banda .title__section h1 {
+  padding-left: 0;
+  justify-content: flex-start;
+  align-items: flex-start !important;
+}
+
+.video {
+  padding-bottom: 60%;
+  position: relative;
+}
+
+.video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+@media screen and (max-width: 425px) {
+  .banner__banda img {
+    height: 250px;
+  }
+}
