@@ -58,19 +58,14 @@ p {
   justify-content: space-between;
 } */
 
-.navbar > .container,
-.navbar > .container-fluid,
-.navbar > .container-lg,
-.navbar > .container-md,
-.navbar > .container-sm,
-.navbar > .container-xl,
-.navbar > .container-xx {
+/* .navbar .navbar-toggler .navbar-toggler-icon .navbar-nav .nav-item li {
   display: flex;
-  justify-content: right;
+  justify-content: center;
+  align-items: flex-end;
   background-color: #af1260;
-}
+} */
 
-/* header {
+header {
   width: 100%;
   min-height: 79px;
 
@@ -79,7 +74,7 @@ p {
   color: var(--primary-color);
   position: fixed;
   z-index: 2;
-  box-shadow: 0px 0px 10px #af1260;
+  box-shadow: 0px 0px 10px #312f30;
 }
 
 .menu {
@@ -126,7 +121,7 @@ nav ul li a::after {
 nav ul li a:hover::after,
 nav ul li a.active::after {
   width: 100%;
-} */
+}
 
 /* Aqui começa o CSS do banner*/
 
@@ -187,6 +182,38 @@ nav ul li a.active::after {
   color: var(--light-color);
   background-color: var(--dark-color);
   padding: 10px;
+}
+
+/*Aqui começa os cards*/
+
+.cards {
+  display: flex;
+  padding: 35px;
+  justify-content: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  box-shadow: 1px 3px 8px #f3f3f3;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.cards .card-body a {
+  background-color: var(--more-dark-color);
+}
+
+.cards .card-body a:hover::after,
+.cards .card-body a.active::after {
+  background-color: red;
+}
+
+.card-title {
+  color: var(--more-dark-color);
+}
+
+.card-text {
+  color: var(--more-dark-color);
 }
 
 /* Aqui começa o CSS do footer*/
