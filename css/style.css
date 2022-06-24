@@ -63,6 +63,19 @@ p {
   bottom: 0;
 }
 
+.subtitle__section {
+  position: relative;
+}
+
+.subtitle__section h4:before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 450px;
+  background-color: var(--more-dark-color);
+  bottom: 0;
+}
+
 .button {
   margin-bottom: 25px;
   padding: 5px 20px 6px;
@@ -78,6 +91,12 @@ p {
 
 a {
   font-weight: 500;
+}
+
+img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE */
 }
 
 /*Aqui começa o header*/
@@ -196,6 +215,9 @@ nav ul li a.active::after {
   justify-content: center;
   gap: 35px;
   flex-wrap: wrap;
+}
+
+.card {
   box-shadow: 1px 3px 8px #f3f3f3;
 }
 
@@ -216,6 +238,7 @@ nav ul li a.active::after {
 footer {
   width: 100%;
   padding: 30px 40px;
+  margin-top: 56px;
   background-color: var(--dark-color);
   display: flex;
   flex-direction: column;
