@@ -64,28 +64,12 @@
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
-              Login
+              Inscreva-se
             </button>
           </div>
         </div>
       </nav>
     </header>
-
-    <!-- <header>
-      <div class="menu">
-        <div class="menu__logo">
-          <img src="img/logo_musica.png" />
-        </div>
-        <nav class="menu__itens">
-          <ul>
-            <li><a href="/index.html" class="active">Home</a></li>
-            <li><a href="#bandas">Bandas</a></li>
-            <li><a href="#">Sobre Nós</a></li>
-            <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"></data-bs-toggle>Login</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header> -->
 
     <main>
       <!-- Inicio do modal -->
@@ -100,6 +84,7 @@
           <div class="modal-content">
             <div class="modal-header">
               <img src="img/logo_musica.png" />
+              <div>Inscreva-se para receber notícias sobre música.</div>
               <button
                 type="button"
                 class="btn-close"
@@ -109,6 +94,17 @@
             </div>
             <div class="modal-body">
               <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"
+                    >Nome Completo</label
+                  >
+                  <input
+                    type="name"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                </div>
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label"
                     >E-mail</label
@@ -137,10 +133,62 @@
                     id="exampleCheck1"
                   />
                   <label class="form-check-label" for="exampleCheck1"
-                    >Lembrar senha</label
+                    >Salvar senha</label
                   >
                 </div>
-                <button type="submit" class="button">Enviar</button>
+                <div>Você gosta mais de:</div>
+                <div class="mb-3 form-check">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Rock</label
+                  >
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                  />
+                </div>
+                <div class="mb-3 form-check">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Ragger</label
+                  >
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                  />
+                </div>
+                <div class="mb-3 form-check">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Hip Hop</label
+                  >
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                  />
+                </div>
+                <div class="mb-3 form-check">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Pop</label
+                  >
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                  />
+                </div>
+                <div class="mb-3 form-check">
+                  <label for="exampleInputPassword1" class="form-label"
+                    >Heavy metal</label
+                  >
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                  />
+                </div>
+
+                <button type="submit" class="button">Cadastrar</button>
               </form>
             </div>
           </div>
@@ -150,13 +198,11 @@
       <!-- Inicio do Banner -->
       <section class="banner">
         <div class="banner_description">
-          <h1>Bjork no cinema.</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-            reiciendis natus. Nisi, velit est et quaerat amet odit officia iste
-            sed pariatur magnam quibusdam quas minus deserunt placeat deleniti
-            fugiat.
-          </p>
+          <h1>
+            Björk regressa ao cinema, 20 anos depois de “Dancer in the Dark”, e
+            pelas mãos de Robert Eggers.
+          </h1>
+          <p>Bjork como Bruxa que prevê o futuro em The Northman</p>
           <a href="#" class="button" alt="Botão ver mais"> Ver Mais</a>
         </div>
       </section>
@@ -193,8 +239,10 @@
             <div class="card-body">
               <h5 class="card-title">David Bowie</h5>
               <p class="card-text">
-                “Starman” ganha nova versão em comemoração aos 50 anos de "The
-                Rise And Fall of Ziggy Stardust".
+                “Starman” ganha nova versão. O lançamento é uma homenagem aos 50
+                anos do álbum The Rise And Fall Of Ziggy Stardust And The
+                Spiders From Mars, lançado nessa mesma data, em 16 de junho de
+                1972.
               </p>
               <a href="./bowie.html" class="button">Visitar</a>
             </div>
@@ -218,11 +266,11 @@
           <div class="card" style="width: 18rem">
             <img
               class="card-img-top"
-              src="./img/banda_florence.png"
+              src="./img/banda_gloria_groove.png"
               alt="Imagem de capa do card"
             />
             <div class="card-body">
-              <h5 class="card-title">Florence And The The Machine</h5>
+              <h5 class="card-title">Florence and The Machine</h5>
               <p class="card-text">
                 Florence And The The Machine tocou algumas músicas ao vivo,
                 entre elas uma versão cover de “Jealous Guy”, de John Lennon, e
@@ -235,40 +283,33 @@
           <div class="card" style="width: 18rem">
             <img
               class="card-img-top"
-              src="./img/banda_1.jpg"
+              src="./img/banda_gloria_groove.png"
               alt="Imagem de capa do card"
             />
             <div class="card-body">
-              <h5 class="card-title">Portishead</h5>
+              <h5 class="card-title">BANDA 5</h5>
               <p class="card-text">
-                Depois de 7 anos, o Portishead volta aos palcos com show
-                marcante.
+                Cantora recebe disco de platina triplo com “Lady Leste”. O
+                certificado é decorrente da marca de 500 milhões de streams nas
+                plataformas digitais, alcançadas nas faixas de “Lady Leste”.
               </p>
-              <a
-                href="https://elcabong.com.br/depois-de-7-anos-o-portishead-volta-aos-palcos-com-show-marcante-assista/"
-                class="button"
-                target="_blank"
-                >Visitar</a
-              >
+              <a href="/gloria.html" class="button">Visitar</a>
             </div>
           </div>
           <div class="card" style="width: 18rem">
             <img
               class="card-img-top"
-              src="./img/banda_1.jpg"
+              src="./img/banda_gloria_groove.png"
               alt="Imagem de capa do card"
             />
             <div class="card-body">
-              <h5 class="card-title">Portishead</h5>
+              <h5 class="card-title">BANDA 6</h5>
               <p class="card-text">
-                Depois de 7 anos, o Portishead volta aos palcos com show
-                marcante.
+                Cantora recebe disco de platina triplo com “Lady Leste”. O
+                certificado é decorrente da marca de 500 milhões de streams nas
+                plataformas digitais, alcançadas nas faixas de “Lady Leste”.
               </p>
-              <a
-                href="https://elcabong.com.br/depois-de-7-anos-o-portishead-volta-aos-palcos-com-show-marcante-assista/"
-                class="button"
-                >Visitar</a
-              >
+              <a href="/gloria.html" class="button">Visitar</a>
             </div>
           </div>
         </div>
@@ -285,7 +326,7 @@
             <img src="img/icon-github.png" alt="Icone do Git Hub" />
           </a>
           <h3>Daniela Coltri</h3>
-          <p>Responsável pelo desenvolvimento de...</p>
+          <p>Responsável pelo desenvolvimento do Site</p>
         </div>
         <div class="team__rigth">
           <div>

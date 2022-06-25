@@ -24,6 +24,16 @@
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
+.information {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 10px;
+}
+
+.information p a {
+  text-decoration: nome;
+}
+
 .video {
   padding-bottom: 60%;
   position: relative;
@@ -50,4 +60,9 @@
   .banner__banda img {
     height: 250px;
   }
+
+  .information {
+    flex-direction: column;
+  }
 }
+
