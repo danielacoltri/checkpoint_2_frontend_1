@@ -41,9 +41,9 @@ h5 {
   color: var(--text-color);
 }
 
-p {
+/* p {
   color: var(--body-font-color);
-}
+} */
 
 .title__section h1 {
   display: flex;
@@ -126,7 +126,7 @@ header {
   background: var(--secondary-color);
   position: absolute;
   left: 0;
-  bottom: -1rem;
+  bottom: -0.75rem;
   transition: width 0.2s;
 }
 
@@ -135,66 +135,15 @@ header {
   width: 100%;
 }
 
-/* header {
-  width: 100%;
-  min-height: 79px;
+/*Aqui começa o CSS do Modal*/
 
-  padding: 10px 40px;
-  background-color: var(--light-color);
-  color: var(--primary-color);
-  position: fixed;
-  z-index: 2;
-  box-shadow: 0px 0px 10px #312f30;
-} */
-
-/* .menu {
+.checkbox_musica {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
 }
-
-.menu__itens {
-  display: flex;
-  justify-content: center;
-}
-
-.menu__itens ul {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  list-style: none;
-}
-
-.menu__itens li a {
-  text-decoration: none;
-  color: var(--primary-color);
-  transition: color 0.2s;
-  position: relative;
-}
-
-nav ul li a:hover,
-nav ul li a.active {
-  color: var(--primary-color);
-}
-
-nav ul li a::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: var(--more-dark-color);
-  position: absolute;
-  left: 0;
-  bottom: -1rem;
-  transition: width 0.2s;
-}
-
-nav ul li a:hover::after,
-nav ul li a.active::after {
-  width: 100%;
-} */
 
 /* Aqui começa o CSS do banner*/
-
 .banner {
   height: 100vh;
   background-image: url("../img/Banner_Bjork.jpg");
@@ -239,7 +188,6 @@ nav ul li a.active::after {
   color: var(--light-color);
   background-color: var(--dark-color);
   padding: 10px;
-
 }
 
 /*Aqui começa os cards*/
@@ -284,37 +232,38 @@ footer {
   font-size: var(--text-footer);
 }
 
-.team {
+.container .team {
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 24px;
-}
-
-.team .team__center {
-  display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 
-.team .team__rigth {
+.icon_sociais {
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 18px;
 }
 
 .team a img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   text-align: center;
   text-decoration: none;
-  transition: 0.3s;
+  transition: all 0.5s;
 }
 
 .team a:hover img {
-  transform: translateY(-8px);
+  transform: scale(1.2);
 }
 
 .icon__seta a img:hover {
-  transform: translateY(-8px);
+  transform: scale(1.2);
 }
 
 .icon__seta {
@@ -334,6 +283,10 @@ footer {
     padding: 10px 20px 11px;
     width: 50%;
     text-align: center;
+  }
+
+  .menu .nav-item .nav-link::after {
+    bottom: -0.3rem;
   }
 
   .banner_description {
@@ -356,19 +309,19 @@ footer {
   }
 
   footer {
+    justify-content: left;
+    align-items: left;
     align-items: flex-start;
   }
 
-  .team {
+  .container .team .icon_sociais h3 p {
+    justify-content: left;
     flex-direction: column;
-  }
-
-  .team .team__rigth {
     align-items: flex-start;
   }
 
   .team h3 {
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   .icon__seta {
