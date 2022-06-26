@@ -167,7 +167,7 @@ header {
   align-items: center;
 }
 
-.banner h1 {
+/* .banner h1 {
   width: 90%;
   background-color: var(--dark-color);
   font-weight: 700;
@@ -176,10 +176,10 @@ header {
   padding: 10px;
   color: var(--text-color);
   align-items: center;
-}
+} */
 
 .banner p {
-  width: 60%;
+  width: 80%;
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -278,6 +278,10 @@ footer {
 }
 
 @media screen and (max-width: 425px) {
+  .container .navbar-brand img {
+    width: 60%;
+  }
+
   .button {
     margin-bottom: 5px;
     padding: 10px 20px 11px;
