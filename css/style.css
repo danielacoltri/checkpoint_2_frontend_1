@@ -268,8 +268,8 @@ footer {
 
 .icon__seta {
   position: absolute;
-  right: 0;
-  bottom: 6px;
+  right: 16px;
+  bottom: 26px;
 }
 
 .icon__seta img {
@@ -278,8 +278,8 @@ footer {
 }
 
 @media screen and (max-width: 425px) {
-  .container .navbar-brand img {
-    width: 60%;
+  .checkbox_musica {
+    flex-direction: column;
   }
 
   .button {
@@ -287,6 +287,10 @@ footer {
     padding: 10px 20px 11px;
     width: 50%;
     text-align: center;
+  }
+
+  .menu {
+    flex-direction: column;
   }
 
   .menu .nav-item .nav-link::after {
