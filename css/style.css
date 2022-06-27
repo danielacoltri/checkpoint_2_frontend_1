@@ -187,7 +187,7 @@ header {
   text-align: center;
   color: var(--light-color);
   background-color: var(--dark-color);
-  padding: 10px;
+  padding: 50px;
 }
 
 /*Aqui começa os cards*/
@@ -322,14 +322,13 @@ footer {
     align-items: flex-start;
   }
 
-  .container .team .icon_sociais h3 p {
+  .container,
+  .team,
+  .icon_sociais a {
+    display: flex;
     justify-content: left;
     flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .team h3 {
-    margin-top: 5px;
+    align-items: flex-end;
   }
 
   .icon__seta {
