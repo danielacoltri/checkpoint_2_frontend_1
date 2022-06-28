@@ -248,6 +248,10 @@ footer {
   padding: 18px;
 }
 
+.responsavel {
+ text-align: center;
+}
+
 .team a img {
   display: flex;
   flex-direction: row;
@@ -292,6 +296,10 @@ footer {
     flex-direction: column;
   }
 
+  .navbar-collapse {
+    text-align: center;
+  }
+
   .menu .nav-item .nav-link::after {
     bottom: -0.3rem;
   }
@@ -321,13 +329,21 @@ footer {
     align-items: flex-start;
   }
 
-  .container,
   .team,
   .icon_sociais a {
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .icon_sociais {
+    padding: 18px 0;
+  }
+
+  .responsavel {
+    text-align: left;
   }
 
   .icon__seta {
