@@ -167,17 +167,6 @@ header {
   align-items: center;
 }
 
-/* .banner h1 {
-  width: 90%;
-  background-color: var(--dark-color);
-  font-weight: 700;
-  font-size: 2rem;
-  text-align: center;
-  padding: 10px;
-  color: var(--text-color);
-  align-items: center;
-} */
-
 .banner p {
   width: 80%;
   font-style: normal;
@@ -197,6 +186,7 @@ header {
   justify-content: center;
   gap: 35px;
   flex-wrap: wrap;
+  flex-grow: 3;
 }
 
 .card {
