@@ -249,7 +249,7 @@ footer {
 }
 
 .responsavel {
- text-align: center;
+  text-align: center;
 }
 
 .team a img {
@@ -306,7 +306,7 @@ footer {
 
   .banner_description {
     position: absolute;
-    bottom: 2%;
+    bottom: 6%;
     display: flex;
     flex-direction: column;
     align-items: center;
