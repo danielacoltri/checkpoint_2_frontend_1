@@ -183,6 +183,7 @@ header {
 }
 
 .frase {
+  white-space: nowrap;
   font-size: 8rem;
   line-height: -25px;
   color: var(--light-color);
@@ -201,7 +202,8 @@ header {
 
 .frase1 {
   position: absolute;
-  top: -250px;
+  white-space: nowrap;
+  top: -200px;
   right: -65px;
   font-size: 8rem;
   line-height: 0;
