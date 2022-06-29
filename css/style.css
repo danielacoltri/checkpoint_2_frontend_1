@@ -97,7 +97,7 @@ a {
 img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
-  filter: gray; /* IE */
+  filter: gray;
 }
 
 /*Aqui começa o header*/
@@ -134,6 +134,12 @@ header {
 .menu .nav-item .nav-link .active::after {
   width: 100%;
 }
+
+.menu .nav-item .nav-link .active::after {
+  width: 100%;
+  
+}
+
 
 /*Aqui começa o CSS do Modal*/
 
