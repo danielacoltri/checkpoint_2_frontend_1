@@ -184,6 +184,10 @@ header {
   padding: 10px;
 }
 
+.banner .button {
+  z-index: 2;
+}
+
 .frase {
   position: absolute;
   white-space: nowrap;
