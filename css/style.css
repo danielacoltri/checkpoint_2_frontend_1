@@ -137,9 +137,7 @@ header {
 
 .menu .nav-item .nav-link .active::after {
   width: 100%;
-  
 }
-
 
 /*Aqui começa o CSS do Modal*/
 
@@ -182,6 +180,43 @@ header {
   color: var(--light-color);
   background-color: var(--dark-color);
   padding: 10px;
+}
+
+.frase {
+  font-size: 8rem;
+  line-height: -25px;
+  color: var(--light-color);
+  opacity: 0.1;
+  animation: scroll 15s 1s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.frase1 {
+  position: absolute;
+  top: -250px;
+  right: -65px;
+  font-size: 8rem;
+  line-height: 0;
+  color: var(--light-color);
+  opacity: 0.1;
+  animation: scroll1 15s 1s linear infinite;
+}
+
+@keyframes scroll1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /*Aqui começa os cards*/
