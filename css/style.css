@@ -210,7 +210,7 @@ header {
 footer {
   width: 100%;
   padding: 30px 40px;
-  margin-top: 56px;
+  margin-top: 15px;
   background-color: var(--dark-color);
   display: flex;
   flex-direction: column;
@@ -256,7 +256,7 @@ footer {
 }
 
 .icon__seta a img:hover {
-  transform: scale(1.2);
+  transform: translateY(-8px);
 }
 
 .icon__seta {
